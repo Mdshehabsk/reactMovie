@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+a.navbar-brand{
+    color: #74b9ff !important;
+    font-weight: bold;
+    font-size: 22px;
+}
+ul.navbar-nav li a{
+    color: #0984e3 !important;
+}
+.active-class{
+    font-weight: bold  !important;
+}
+h1.header{
+    font-family:'Mulish', sans-serif;
+    padding-bottom: 20px;
+    color:#0984e3 ;
+}
+
+.movie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 50px;
+}
+.movie .img{
+    width: 50%;
+}
+.movie img{
+    width: 450px ;
+    height: 450px;
+    object-fit: cover;
+}
+.movie .title{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.movie .title h2{
+    font-size: 50px;
+    color:#0984e3  ;
+}
+.movie .title p{
+    font-size: 25px;
+}
+.movie .title a{
+    padding: 12px 45px;
+    border-radius: 3px ;
+    border: none;
+    border: 1px solid black;
+    font-size: 18px;
+    transition: .5s linear;
+    text-decoration: none;
+}
+.movie .title a:hover{
+    background-color:#0984e3 ;
+    color: #fff;
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .movie img{
+        width: 350px;
+        height: 350px;
+    }
+    .movie .title h2{
+        font-size: 40px;
+    }
+    .movie .title p{
+        font-size: 20px;
+    }
+    .movie .title a{
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+}
+@media (min-width:768px) and (max-width:992px){
+    .movie{
+        padding: 0px;
+    }
+    .movie img{
+        width: 350px;
+        height: 350px;
+    }
+    .movie .title{
+        width: 40%;
+    }
+    .movie .title h2{
+        font-size: 25px;
+    }
+    .movie .title p{
+        font-size: 18px;
+    }
+    .movie .title a{
+        padding: 8px 15px;
+    }
+
+}
+@media (min-width:480px) and (max-width:768px){
+    .movie{
+        flex-flow: column;
+    }
+    .movie .img{
+        /* width: 250px;
+        height: 250px; */
+        width: 100%;
+    }
+    .movie .title{
+        width: 100%;
+    }
+    .movie .title h2{
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    .movie .title p{
+        font-size: 18px;
+    }
+    .movie .title a{
+        padding: 8px 10px ;
+        font-size: 16px;
+    }
+}
+@media (max-width:480px){
+    .movie{
+        flex-flow: column;
+    }
+    .movie .img{
+        /* width: 250px;
+        height: 250px; */
+        width: 90%;
+    }
+    .movie img{
+        width: 200px;
+        height: 200px;
+    }
+    .movie .title{
+        width: 90%;
+    }
+    .movie .title h2{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .movie .title p{
+        font-size: 16px;
+    }
+    .movie .title a{
+        padding: 10px;
+        font-size: 16px;
+    }
+}
