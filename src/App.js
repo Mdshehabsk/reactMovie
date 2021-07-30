@@ -15,10 +15,11 @@ function App(){
     <Navbar/>
     <Switch>
         <Route  exact path='/' component={Movie1} />
-        <Route  path='/movie2' component={Movie2} />
-        <Route  path='/movie3' component={Movie3} />
-        <Route  path='/movie4' component={Movie4} />
-        <Route  path='/movie5' component={Movie5} />
+        <Route  exact path='/reactMovie' component={Movie1} />
+        <Route  exact path='/movie2' component={Movie2} />
+        <Route  exact path='/movie3' component={Movie3} />
+        <Route  exact path='/movie4' component={Movie4} />
+        <Route  exact path='/movie5' component={Movie5} />
     </Switch>
     </>
     )
